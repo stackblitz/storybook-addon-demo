@@ -6,6 +6,9 @@ export default {
   args: {
     values: ['One', 'Two', 'Three'],
   },
+  parameters: {
+    filePath: 'src/components/ButtonGroup/ButtonGroup.stories.tsx',
+  },
 };
 
 export const Default = {};

@@ -7,6 +7,7 @@ const preview = {
         date: /Date$/i,
       },
     },
+    repositoryUrl: 'https://github.com/stackblitz/storybook-addon-demo',
   },
 };
 
