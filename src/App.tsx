@@ -1,5 +1,5 @@
 import './App.css';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Accordion,
@@ -7,15 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from '@/components/ui/menubar';
+import { Menubar, MenubarMenu, MenubarTrigger } from '@/components/ui/menubar';
 
 function App() {
   return (
