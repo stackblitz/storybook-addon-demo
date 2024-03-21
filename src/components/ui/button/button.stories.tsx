@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
+import { ReloadIcon } from '@radix-ui/react-icons';
 import { Button } from './button';
 
-//👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof Button> = {
   title: 'Demo/Button',
   component: Button,
+  subcomponents: { ReloadIcon },
   parameters: {
     filePath: 'src/components/ui/button/button.stories.tsx',
   },
@@ -14,8 +14,27 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const FirstStory: Story = {
+export const Default: Story = {
   args: {
     children: 'Click me',
   },
+};
+
+export const Outline: Story = {
+  args: {
+    variant: 'outline',
+    children: 'Click me',
+  },
+};
+
+export const WithIcon: Story = {
+  args: {
+    disabled: true,
+  },
+  render: (args) => (
+    <Button {...args}>
+      <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+      Please wait
+    </Button>
+  ),
 };

@@ -1,13 +1,21 @@
 import './App.css';
 import { Button } from '@/components/ui/button/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@/components/ui/avatar/avatar';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import { Menubar, MenubarMenu, MenubarTrigger } from '@/components/ui/menubar';
+} from '@/components/ui/accordion/accordion';
+import {
+  Menubar,
+  MenubarMenu,
+  MenubarTrigger,
+} from '@/components/ui/menubar/menubar';
 
 function App() {
   return (
